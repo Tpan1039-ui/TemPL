@@ -1,7 +1,13 @@
-# [Model/Data] TemPL 
+# [Model] TemPL 
+
+<!-- Insert the project banner here -->
+<div align="center">
+    <a href="https://"><img width="1000px" height="auto" src="https://github.com/openmedlab/sampleProject/blob/main/banner_sample.png"></a>
+</div>
 
 <!-- Select some of the point info, feel free to delete -->
 ![PyTorch Version](https://img.shields.io/badge/dynamic/json?color=blue&label=pytorch&query=%24.pytorchVersion&url=https%3A%2F%2Fgist.githubusercontent.com/PaParaZz1/54c5c44eeb94734e276b2ed5770eba8d/raw/85b94a54933a9369f8843cc2cea3546152a75661/badges.json)
+[![GitHub license](https://img.shields.io/github/license/ai4protein/TemPL)](https://github.com/ai4protein/TemPL/blob/main/LICENSE)
 
 Updated on 2023.06.15
 
@@ -11,7 +17,7 @@ Updated on 2023.06.15
 
 This repository provides the official implementation of TemPL (Temperature-Guided Protein Language Modeling).
 
-key feature bulletin points here
+Key features:
 - OGT (Optimal Growth Temperature) prediction.
 - Zero-shot mutant effect prediction.
 
