@@ -36,13 +36,13 @@ TemPL, a novel protein language model, has been developed for predicting the Opt
 
 ### The performance of TemPL.
 
-#### Performance of OGT prediction task.
+#### Performance of the OGT prediction task.
 |            |  RMSE | Pearson correlation coefficient | Spearman's rank correlation coefficient | Coefficient of determination |
 |:----------:|:-----:|:-------------------------------:|-----------------------------------------|------------------------------|
 |   TemPL    | 4.736 |              0.653              |                  0.598                  |             0.417            |
 | [DeepET](https://onlinelibrary.wiley.com/doi/10.1002/pro.4480) | 5.985 |              0.417              |                  0.333                  |             0.069            |
 
-#### Performance Zero-shot mutant effect prediction
+#### Performance of the zero-shot mutant effect prediction.
 
 ##### TM datasets
 |           | ESM-1v | ROSSETA | MSA-Transformer | TemPL(No OGT task) |  TemPL |     Tranception      | TemPL (Fine-tuned) |
