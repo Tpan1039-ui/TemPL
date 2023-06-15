@@ -2,7 +2,7 @@
 
 <!-- Insert the project banner here -->
 <div align="center">
-    <a href="https://"><img width="1000px" height="auto" src="https://github.com/openmedlab/sampleProject/blob/main/banner_sample.png"></a>
+    <a href="https://github.com/ai4protein/TemPL/"><img width="1000px" height="auto" src="https://github.com/ai4protein/TemPL/blob/main/band.jpg"></a>
 </div>
 
 <!-- Select some of the point info, feel free to delete -->
