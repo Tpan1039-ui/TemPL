@@ -162,7 +162,7 @@ A lot of code is modified from [🤗 transformers](https://github.com/huggingfac
 If you find this repository useful, please consider citing this paper:
 ```
 @misc{tan2023templ,
-      title={TemPL: A Novel Deep Learning Model for Zero-Shot Prediction of Protein Stability and Activity Based on Temperature-Guided Language Modeling}, 
+      title={Engineering Enhanced Stability and Activity in Proteins through a Novel Temperature-Guided Language Modeling.}, 
       author={Pan Tan and Mingchen Li and Liang Zhang and Zhiqiang Hu and Liang Hong},
       year={2023},
       eprint={2304.03780},
