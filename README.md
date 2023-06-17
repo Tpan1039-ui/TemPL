@@ -31,7 +31,7 @@ Key features:
 ### What is Prime?
 Prime, a novel protein language model, has been developed for predicting the Optimal Growth Temperature (OGT) and enabling zero-shot prediction of protein thermostability and activity. This novel approach leverages temperature-guided language modeling.
 <div align="center">
-    <a href="https://"><img width="1000px" height="auto" src="https://github.com/ai4protein/Prime/blob/main/model.jpg"></a>
+    <a href="https://"><img width="1000px" height="auto" src="https://github.com/ai4protein/Prime/blob/main/model.png"></a>
 </div>
 
 ### The performance of Prime.
@@ -161,7 +161,7 @@ A lot of code is modified from [🤗 transformers](https://github.com/huggingfac
 
 If you find this repository useful, please consider citing this paper:
 ```
-@misc{tan2023templ,
+@misc{tan2023,
       title={Engineering Enhanced Stability and Activity in Proteins through a Novel Temperature-Guided Language Modeling.}, 
       author={Pan Tan and Mingchen Li and Liang Zhang and Zhiqiang Hu and Liang Hong},
       year={2023},
