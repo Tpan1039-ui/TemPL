@@ -40,20 +40,20 @@ class AttentionHead(nn.Module):
         return self.mlp(context_vector)
 
 
-class TemPL(EsmPreTrainedModel):
+class PrimeV0(EsmPreTrainedModel):
 
     @classmethod
     def load(cls, model_name):
-        if model_name == "templ-base":
-            model = TemPL(ogt_head=True)
-            checkpoint_path = "templ-base.ckpt"
+        if model_name == "prime-base":
+            model = PrimeV0(ogt_head=True)
+            checkpoint_path = "prime-base.ckpt"
             model.load_state_dict(torch.load(checkpoint_path, map_location="cpu"))
             model.eval()
             return model
 
-        elif model_name == "templ-tm-fine-tuning":
-            model = TemPL(ogt_head=False)
-            checkpoint_path = "templ-tm-fine-tuning.ckpt"
+        elif model_name == "prime-tm-fine-tuning":
+            model = PrimeV0(ogt_head=False)
+            checkpoint_path = "prime-tm-fine-tuning.ckpt"
             model.load_state_dict(torch.load(checkpoint_path, map_location="cpu"))
             model.eval()
             return model
@@ -64,7 +64,7 @@ class TemPL(EsmPreTrainedModel):
     def __init__(self, config=None, ogt_head=False):
         if config is None:
             config = make_config()
-        super(TemPL, self).__init__(config)
+        super(PrimeV0, self).__init__(config)
         self.esm = EsmModel(config, add_pooling_layer=False)
         self.lm_head = EsmLMHead(config)
         if ogt_head:

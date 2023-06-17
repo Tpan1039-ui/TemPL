@@ -1,4 +1,4 @@
-from model import TemPL
+from model import PrimeV0
 import torch
 from tqdm import tqdm
 import pandas as pd
@@ -31,7 +31,7 @@ def score_file(model, tokenizer, fasta_file):
 
 def main(args):
     tokenizer = AutoTokenizer.from_pretrained("facebook/esm2_t33_650M_UR50D")
-    model = TemPL.load(args.model_name)
+    model = PrimeV0.load(args.model_name)
     model.to(device)
     df = score_file(model, tokenizer, args.fasta)
     if args.output is not None:

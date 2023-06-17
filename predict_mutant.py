@@ -1,4 +1,4 @@
-from model import TemPL
+from model import PrimeV0
 import torch
 from tqdm import tqdm
 from utils import read_seq_from_fasta
@@ -12,7 +12,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 @torch.no_grad()
-def compute_probabilities_over_sequence(model: TemPL, wt_sequence_input_ids):
+def compute_probabilities_over_sequence(model: PrimeV0, wt_sequence_input_ids):
     probabilities = []
     for i in tqdm(range(0, wt_sequence_input_ids.size(1))):
         masked_input_ids = wt_sequence_input_ids.clone()
@@ -62,7 +62,7 @@ def score_file(model, tokenizer, fasta_file, mutant_file, compute_spearman=True)
 
 def main(args):
     tokenizer = AutoTokenizer.from_pretrained("facebook/esm2_t33_650M_UR50D")
-    model = TemPL.load(args.model_name)
+    model = PrimeV0.load(args.model_name)
     model.to(device)
     df = score_file(model, tokenizer, args.fasta, args.mutant)
     if args.compute_spearman:
