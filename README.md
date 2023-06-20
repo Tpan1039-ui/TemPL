@@ -126,7 +126,7 @@ python predict_ogt.py --model_name prime-base \
 
 **Predicting Mutant Effect**
 
-Using the prime-base model.
+Using the prime-base model. (Recommended)
 ```shell
 python predict_mutant.py --model_name prime-base \
 --fasta ./datasets/TM/1CF1/1CF1.fasta \
@@ -135,7 +135,7 @@ python predict_mutant.py --model_name prime-base \
 --output pred.tsv
 ```
 
-Or using the model that fine-tuned on the homologous sequence of the TM dataset.
+Or using the model that fine-tuned on the homologous sequence of the proteins in the TM dataset.
 ```shell
 python predict_mutant.py --model_name prime-tm-fine-tuning \
 --fasta ./datasets/TM/1CF1/1CF1.fasta \
